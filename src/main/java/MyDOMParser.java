@@ -29,6 +29,7 @@ public class MyDOMParser {
 
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
+                //TODO: As told earlier, try to declare references outside the loop
                 Node nNode = nList.item(temp);
 
                 System.out.println("\nCurrent Element :" + nNode.getNodeName());
