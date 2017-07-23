@@ -27,16 +27,18 @@ public class MyDOMParser {
 
             System.out.println("----------------------------");
 
+            Node nNode;
+            Element eElement;
+
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
-                //TODO: As told earlier, try to declare references outside the loop
-                Node nNode = nList.item(temp);
+                nNode = nList.item(temp);
 
                 System.out.println("\nCurrent Element :" + nNode.getNodeName());
 
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
-                    Element eElement = (Element) nNode;
+                    eElement = (Element) nNode;
 
                     System.out.println("Employee id : " + eElement.getAttribute("id"));
                     System.out.println("First Name : " + eElement.getElementsByTagName("firstName").item(0).getTextContent());
